@@ -88,7 +88,7 @@ const LandingTestominal = () => {
 
     return (
         <div className=" bg-slate-950 py-16">
-            <h1 className="text-white text-4xl font-black text-center mb-8">Our Customers Are Saying</h1>
+            <h1 className="text-white text-4xl font-black text-center mb-4">Our Customers Are Saying</h1>
             <div className="w-full inline-flex flex-nowrap overflow-x-hidden overflow-y-hidden py-10">
                 <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                     {

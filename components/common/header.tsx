@@ -1,18 +1,45 @@
-import { FC } from "react";
+'use client'
+
+import { FC, useEffect, useState } from "react";
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/react";
 import Link from "next/link";
 
-const Header : FC = () => {
+const Header: FC = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', (e) => {
+            if (window.scrollY > 100) {
+                
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+
+            if (window.scrollY > window.innerHeight) {
+                setShowSearch(true);
+            } else {
+                setShowSearch(false);
+            }
+        })
+    }, [])
+
     return (
-        <div className="h-20 flex items-center px-8 justify-between fixed w-full t-0 bg-transparent z-20">
+        <div className={`h-20 flex items-center px-8 justify-between fixed w-full t-0 ${isScrolled ? 'backdrop-blur-xl' : 'bg-transparent'} z-20`}>
             <div className="">
                 <span className="font-black text-3xl text-white">WeGrowUp</span>
             </div>
             <div className="flex items-center">
-                <button className="text-white font-semibold text-sm mx-3 hidden md:block hover:underline">Find Work</button>
-                <button className="text-white font-semibold text-sm mx-3 hidden md:block hover:underline">About us</button>
-                <button className="text-white font-semibold text-sm mx-3 hidden md:block hover:underline">Careers</button>
-                <Menu>
+                <div className={`w-50 rounded border border-slate-400 px-3 h-8 mx-5 ${showSearch ? 'hidden md:flex' : 'hidden'}`}>
+                    <input type="text" className="py-2 bg-transparent outline-none text-white flex-1 text-sm" placeholder="Find works" />
+                    <button className="text-white text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                </div>
+                {/* <Menu>
                     <MenuButton className="block md:hidden mx-2">
                         <span className="text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -64,9 +91,9 @@ const Header : FC = () => {
                             </Link>
                         </MenuItem>
                     </MenuItems>
-                </Menu>
+                </Menu> */}
                 <button className="text-white font-semibold text-sm mx-3">Sign in</button>
-                <button className="text-white font-semibold text-sm mx-3">Sign up</button>
+                <button className="text-white font-semibold text-sm mx-3">Join us   </button>
             </div>
         </div>
     )
