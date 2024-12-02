@@ -15,73 +15,73 @@ const LandingTestominal = () => {
         {
             id: 2,
             avatar: "/assets/image/avatar2.png",
-            name: "Tara",
+            name: "John",
             saying: "One of the most honest experiences I've had on the web, ever! I recommend Bark for searching for business professionals."
         },
         {
             id: 3,
             avatar: "/assets/image/avatar3.png",
-            name: "Tara",
+            name: "Wilson",
             saying: "Excellent service. They responded much faster than I had anticipated and I was left with a wide range of offers. Brilliant work, Bark!"
         },
         {
             id: 4,
             avatar: "/assets/image/avatar4.png",
-            name: "Tara",
+            name: "Joana",
             saying: "Both companies that I responded to have been interactive and tended to my concerns and needs, and both were friendly and professional."
         },
         {
             id: 5,
             avatar: "/assets/image/avatar5.png",
-            name: "Tara",
+            name: "Nick",
             saying: "Very quickly, had 4 replies. The guy from SJ driveways and landscapes was very efficient and friendly and the work was completed in a short time."
         },
         {
             id: 6,
             avatar: "/assets/image/avatar6.png",
-            name: "Tara",
+            name: "William",
             saying: "I found using Bark amazing. Posted a request and had 5 contacts within 30 minutes. Excellent service."
         },
         {
             id: 7,
             avatar: "/assets/image/avatar7.png",
-            name: "Tara",
+            name: "Linda",
             saying: "Simply Amazing. Made a booking within minutes!"
         },
         {
             id: 8,
             avatar: "/assets/image/avatar8.png",
-            name: "Tara",
+            name: "James",
             saying: "Bark was easy to use and I received sensible quotes. I had a professional visit the next day and he did an excellent job."
         },
         {
             id: 9,
             avatar: "/assets/image/avatar9.png",
-            name: "Tara",
+            name: "Kevin",
             saying: "Quick and easy service. Got responses instantly and the next day the job had been completed."
         },
         {
             id: 10,
             avatar: "/assets/image/avatar10.png",
-            name: "Tara",
+            name: "Tina",
             saying: "Great service, I'd totally recommend it. Excellent way to find a professional you need."
         },
         {
             id: 11,
             avatar: "/assets/image/avatar11.png",
-            name: "Tara",
+            name: "Maria",
             saying: "I’ve used Bark twice and was really pleased with the quick response I received."
         },
         {
             id: 12,
             avatar: "/assets/image/avatar12.png",
-            name: "Tara",
+            name: "Rora",
             saying: "I used Bark for a last minute job I needed and the whole process was seamless."
         },
         {
             id: 13,
             avatar: "/assets/image/avatar13.png",
-            name: "Tara",
+            name: "Miler",
             saying: "Within 10 minutes of making my enquiry, I had contact from 2 interested companies ready to assist me."
         }
     ]
