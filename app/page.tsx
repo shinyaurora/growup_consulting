@@ -2,6 +2,7 @@
 
 import LandingIntro from "@/components/landing/intro";
 import LandingService from "@/components/landing/service";
+import LandingTestominal from "@/components/landing/testominal";
 import { FC, Fragment } from "react";
 
 const LandingPage: FC = () => {
@@ -9,6 +10,7 @@ const LandingPage: FC = () => {
     <Fragment>
       <LandingIntro />
       <LandingService />
+      <LandingTestominal />
     </Fragment>
   )
 }

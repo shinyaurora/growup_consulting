@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 50s linear infinite',
+        'infinite-scroll': 'infinite-scroll 60s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
