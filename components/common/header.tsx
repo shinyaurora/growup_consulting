@@ -1,15 +1,15 @@
 'use client'
 
 import { FC, useEffect, useState } from "react";
-import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/react";
-import Link from "next/link";
+// import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/react";
+// import Link from "next/link";
 
 const Header: FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
 
     useEffect(() => {
-        window.addEventListener('scroll', (e) => {
+        window.addEventListener('scroll', (/*e*/) => {
             if (window.scrollY > 100) {
                 
                 setIsScrolled(true);

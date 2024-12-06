@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react";
+// import { useState } from "react";
 
 const LandingTestominal = () => {
-    const [current, setCurrent] = useState<number>(0);
+    // const [current, setCurrent] = useState<number>(0);
 
     const sayingList = [
         {

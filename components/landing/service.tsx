@@ -1,4 +1,4 @@
-import { serialize } from "v8";
+// import { serialize } from "v8";
 
 const LandingService = () => {
     const serviceList = [
